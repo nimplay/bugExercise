@@ -1,0 +1,99 @@
+.contactform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 24px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  left: 24px;
+  margin-bottom: 70px;
+  margin-top: 25%;  
+}
+
+.form-name{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-name.success input {
+  background-color: rgba(0, 128, 0, 0.3);
+}
+
+.form-name.error input {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.form-name small {
+  visibility: hidden;
+}
+
+.form-name.error small {
+  color: brown;
+  visibility: visible;
+}
+.cdata {
+  width: 327px;
+  height: 48px;
+  flex: none;
+  flex-grow: 0;
+  border-top: #dbd8d7;
+  border-left: none;
+  border-right: none;
+}
+
+.cmessage {
+  width: 327px;
+  height: 114px;
+  flex: none;
+  flex-grow: 0;
+  border: none;
+  background-color: #fbf8f7;
+  padding: 15px;
+}
+
+.csubmit {
+  order: 3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 131px;
+  height: 48px;
+  background: #ff6b00;
+  border: none;
+  flex: none;
+  flex-grow: 0;
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffff;
+  text-decoration: none;
+}
+
+.csubmit:enabled {
+  background: #ff6b00;
+  color: #ffff;
+}
+
+.csubmit:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border-color: #f55800;
+  border: 1px solid;
+}
+
+.csubmit:active {
+  background: #e05304;
+}
+
+.csubmit:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
