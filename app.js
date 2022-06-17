@@ -1,5 +1,5 @@
 const form = document.getElementById('form');
-const name = document.getElementById('f-name');
+const name  = document.getElementById('f-name');
 const email = document.getElementById('f-mail');
 
 function setErrorFor(input, message) {
@@ -10,7 +10,7 @@ function setErrorFor(input, message) {
 }
 
 function setSuccessFor(input) {
-  const formControl = inpot.parentElement;
+  const formControl = input.parentElement;
   formControl.className = 'form-name success';
 }
 
@@ -30,7 +30,7 @@ function checkImputs() {
   if (usermailValue === '') {
     setErrorFor(email, 'Email address cannot be in blank');
   } else if (!isEmail(usermailValue)) {
-    setErrorFor(mail, 'Email address is not valid');
+    setErrorFor(email, 'Email address is not valid');
   } else {    
     setSuccessFor(name);
   }
